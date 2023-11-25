@@ -1,0 +1,38 @@
+#Create Data
++struktur data yang akan dimasukan dari postman
+{
+    "name":string,
+    "year":number,
+    "author":string,
+    "summary":string,
+    "publisher":string,
+    "pageCount":number,
+    "readPage":number,
+    "reading":boolean
+}
+
++struktur data yang akan disimpan didalam array
+{
+    "id":nanoid(16)
+    "name":string,
+    "year":number,
+    "author":string,
+    "summary":string,
+    "publisher":string,
+    "pageCount":number,
+    "readPage":number,
+    "finished":boolean,
+    "reading":boolean,
+    "insertedAt": time,
+    "updatedAt": time
+}
+++ jika finished = true (readPage = pageCount)
+++ jika finished = false (readPage < pageCount)
+++ jika finished = undefined (readPage > pageCount)
+
+#Melihat isi data array
+{
+    "id":nanoid(16),
+    "name":string,
+    "publisher": string
+}
